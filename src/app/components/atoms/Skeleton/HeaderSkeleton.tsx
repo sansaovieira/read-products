@@ -1,9 +1,8 @@
-
-export const SkeletonHeader: React.FC = () => {
+export const SkeletonHeader = () => {
   return (
-    <header className="flex">
-      <div className="w-[10rem] h-10 bg-gray-200 animate-pulse" />
-      <div className="w-[8rem] h-6 ml-[1rem] mt-[1rem] bg-gray-200 animate-pulse" />
+    <header className="flex justify-between">
+      <div className="w-[16rem] rounded-lg h-10 bg-gray-200 animate-pulse " />
+      <div className="flex justify-items-end rounded-lg w-[6rem] h-8 ml-[52rem] -mt-[0.1rem] bg-gray-200 animate-pulse" />
     </header>
   );
 };

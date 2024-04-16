@@ -13,20 +13,22 @@ export const Card = ({ imageInfo, name, price, description, children }: CardProp
   const { image, title } = imageInfo;
 
   return (
-    <div className="rounded w-[26rem]">
-      <div className="border border-solid">
-        <img className="w-[14rem] m-auto 0
-          p-2" src={image} alt={title} />
-        <div className="flex justify-between m-4 leading-6">
-          <h1 className="text-[#2c2c2c] font-bold font-normal py-3">{name}</h1>
-          <span className="w-auto bg-[#373737] text-white text-center text-sm rounded-md p-3">R${price}</span>
+    <div className="mx-auto p-4 bg-white">
+      <div className="shadow-md">
+        <div className="shrink-0">
+          <img className="w-full mx-auto" src={image} alt={title} />
         </div>
-        <span>
-          <p className="p-3 text-justify text-sm">{description}
-          </p>
-        </span>
+        <div className="flex justify-between mx-2 py-4">
+          <span className="text-[#2c2c2c] text-sm font-bold">{name}</span>
+          <span className="bg-[#373737] text-white rounded-md p-2 h-8 text-sm leading-3">R${price}</span>
+        </div>
+        <div className="px-2 text-xs text-justify">
+          <p>{description}</p>
+        </div>
+        <div>
+          {children}
+        </div>
       </div>
-      {children}
     </div>
   );
 };

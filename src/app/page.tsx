@@ -1,7 +1,6 @@
 'use client';
 
 import { CartProvider } from '@/context/CartContext';
-import { Cart } from '@/pages/cart';
 import { Store } from '@/pages/store';
 import {
   QueryClient,
@@ -16,7 +15,6 @@ export default function Home() {
       <CartProvider>
         <QueryClientProvider client={queryClient}>
           <Store />
-          <Cart />
         </QueryClientProvider>
       </CartProvider>
     </>
