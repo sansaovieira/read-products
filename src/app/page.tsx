@@ -1,7 +1,7 @@
 'use client';
 
 import { CartProvider } from '@/context/CartContext';
-import { Store } from '@/pages/store';
+import { Store } from '@/app/components/pages/store';
 import {
   QueryClient,
   QueryClientProvider
